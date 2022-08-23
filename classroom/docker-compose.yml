@@ -1,0 +1,19 @@
+version: "3"
+
+services:
+  classroom:
+    build: .
+    entrypoint: .docker/entrypoint.sh
+    container_name: courses-manager-classroom
+    ports:
+      - ${SERVER_PORT}:3333
+      - 5555:5555
+    logging:
+      driver: 'json-file'
+      options:
+        max-size: '10m'
+        max-file: '5'
+    volumes:
+      - .:/home/node/app
+    depends_on:
+      - db_postgres

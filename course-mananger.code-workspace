@@ -1,0 +1,14 @@
+{
+  "folders": [
+		{
+			"path": "purchase"
+		},
+		{
+			"path": "classroom"
+		},
+		{
+			"path": "gateway"
+		}
+	],
+  "settings": {}
+}

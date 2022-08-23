@@ -1,0 +1,7 @@
+.env
+.docker/postgres_data
+.docker/zookeeper_data
+.docker/kafka_data
+
+# OS
+.DS_Store
